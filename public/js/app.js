@@ -178,8 +178,8 @@ app.controller("LoginCtrl",function (socket,$scope,$interval,$timeout,$rootScope
         Session.getSession();
         $scope.Model.cWeight = "0.00";
         $rootScope.Model.isLogin = false;
-        $scope.Model.username = "vincent";
-        $scope.Model.password = "vincent@123";
+        $scope.Model.username = "accent";
+        $scope.Model.password = "accent";
         $scope.Model.selectedShift = $scope.Model.shift[0];
     });
 

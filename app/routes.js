@@ -14,14 +14,6 @@ module.exports = function(app,io) {
 	// GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' IDENTIFIED WITH mysql_native_password BY 'Ashwin!@#2023' WITH GRANT OPTION;
 	// FLUSH PRIVILEGES;
 
-	// var con = mysql.createConnection({
-	// 	host: "cloud-db.c1aefstrp0sv.ap-south-1.rds.amazonaws.com",
-	// 	user: "admin",
-	// 	password: "Satyamev516",
-	// 	database: "virtueplast_latest",
-	// 	acquireTimeout: 1000000
-	// });
-
 	var con = mysql.createConnection({
 		host: "68.178.172.105",
 		user: "admin",
@@ -30,20 +22,7 @@ module.exports = function(app,io) {
 		acquireTimeout: 1000000
 	});
 
-	// var con = mysql.createConnection({
-	// 	host: "192.168.0.8",
-	// 	user: "admin",
-	// 	password: "accent@123",
-	// 	database: "virtueplast",
-	// 	acquireTimeout: 1000000
-	// });
-
-        /*var con = mysql.createConnection({
-		host: "itechdbinstance.civspk3jyqek.ap-south-1.rds.amazonaws.com",
-		user: "itechinterface",
-		password: "Password1904",
-		database: "virtueplast",
-		acquireTimeout: 1000000
+	/*
 	});*/
 
 	var scale_id = fs.readFileSync('scale_id', 'utf8');
@@ -272,11 +251,11 @@ module.exports = function(app,io) {
 		console.log("^FX");
 		console.log("^CF0,50");
 		// console.log("^FO50,30^GFA,1352,1352,13,,R06,Q01F8,Q07FE,P01IF8,P07IFE,P0KF,O03KFC,O0MF,N03MFC,N0OF,M01OF8,M07OFE,L01QF8,L07QFE,K01SF8,K07SFE,K0UF,J03UFC,J0WF,I03WFC,I0YF,003YFC,007YFE,01gGF8,07gGFE,:007YFE,I07WFE,J0WF,J07UFE,:J03UFC,:J01UF8,:K0UF,:K07SFE,K03SFC,:K01SF8,:8K0SFK01,:CK07QFEK03,EK07QFEK07,EK03QFCK07,FK01QF8K0F,:F8K0QFK01F,FCK0QFK03F,FCK07OFEK03F,FEK07OFEK07F,FEK03OFCK07F,FFK03OFCK0FF,FF8J01OF8J01FF,FF8K0OFK01FF,FFCK0OFK03FF,FFCK07MFEK03FF,FFEK07MFEK07FF,IFK03MFCK0IF,:IF8J01MF8J01IF,:IFCK0MFK03IF,IFEK07KFEK07IF,:JFK03KFCK0JF,JF8J03KFCJ01JF,JF8J01KF8J01JF,JFCJ01KF8J03JF,JFCK0KFK03JF,JFEK0KFK07JF,KFK07IFEK0KF,:KF8J03IFCJ01KF,KF8J01IF8J01KF,KFCJ01IF8J03KF,KFEK0IFK07KF,:LFK07FEK0LF,:7KF8J03FCJ01KFE,1KFCJ03FCJ03KF8,0KFCJ01F8J03KF,03JFEK0FK07JFC,00JFEK0FK07JF,003JFK06K0JFC,I0JF8J06J01JF,I03IF8O01IFC,I01IFCO03IF8,J07FFCO03FFE,J01FFEO07FF8,K07FFO0FFE,K01FFO0FF8,L07F8M01FE,L03F8M01FC,M0FCM03F,M03EM07C,N0EM07,N03M0C,,:^FS");
-		console.log("^FO50,30^FDVIRTUE PLAST PVT. LTD.^FS");
+		console.log("^FO50,30^FDPOLYPET^FS");
 		console.log("^CF0,22");
-		console.log("^FO50,90^FDShed No. 17, Block no. 856/P, Kahaan Industrial Estate, Village:Santej,^FS");
+		console.log("^FO50,90^FDIID Center, SICOP, Govindsar,^FS");
 		console.log("^CF0,22");
-		console.log("^FO50,130^FDTaluka: Kalol, Dist.: Gandhinagar, Gujarat-382721.^FS");
+		console.log("FO50,130^FDKathua, (J&K)");
 		console.log("^FO50,170^GB750,1,3^FS");
 		console.log("^FX ");
 		console.log("^CF0,25");
@@ -320,15 +299,15 @@ module.exports = function(app,io) {
 		});
 		// printer_.write("^FO50,30^GFA,1352,1352,13,,R06,Q01F8,Q07FE,P01IF8,P07IFE,P0KF,O03KFC,O0MF,N03MFC,N0OF,M01OF8,M07OFE,L01QF8,L07QFE,K01SF8,K07SFE,K0UF,J03UFC,J0WF,I03WFC,I0YF,003YFC,007YFE,01gGF8,07gGFE,:007YFE,I07WFE,J0WF,J07UFE,:J03UFC,:J01UF8,:K0UF,:K07SFE,K03SFC,:K01SF8,:8K0SFK01,:CK07QFEK03,EK07QFEK07,EK03QFCK07,FK01QF8K0F,:F8K0QFK01F,FCK0QFK03F,FCK07OFEK03F,FEK07OFEK07F,FEK03OFCK07F,FFK03OFCK0FF,FF8J01OF8J01FF,FF8K0OFK01FF,FFCK0OFK03FF,FFCK07MFEK03FF,FFEK07MFEK07FF,IFK03MFCK0IF,:IF8J01MF8J01IF,:IFCK0MFK03IF,IFEK07KFEK07IF,:JFK03KFCK0JF,JF8J03KFCJ01JF,JF8J01KF8J01JF,JFCJ01KF8J03JF,JFCK0KFK03JF,JFEK0KFK07JF,KFK07IFEK0KF,:KF8J03IFCJ01KF,KF8J01IF8J01KF,KFCJ01IF8J03KF,KFEK0IFK07KF,:LFK07FEK0LF,:7KF8J03FCJ01KFE,1KFCJ03FCJ03KF8,0KFCJ01F8J03KF,03JFEK0FK07JFC,00JFEK0FK07JF,003JFK06K0JFC,I0JF8J06J01JF,I03IF8O01IFC,I01IFCO03IF8,J07FFCO03FFE,J01FFEO07FF8,K07FFO0FFE,K01FFO0FF8,L07F8M01FE,L03F8M01FC,M0FCM03F,M03EM07C,N0EM07,N03M0C,,:^FS",function(err){
 		// });
-		printer_.write("^FO50,30^FDVIRTUE PLAST PVT. LTD.^FS", function(err) {
+		printer_.write("^FO50,30^FDPOLYPET^FS", function(err) {
 		});
 		printer_.write("^CF0,22", function(err) {
 		});
-		printer_.write("^FO50,90^FDShed No. 17, Block no. 856/P, Kahaan Industrial Estate, Village:Santej,^FS", function(err) {
+		printer_.write("^FO50,90^FDIID Center, SICOP, Govindsar,^FS", function(err) {
 		});
 		printer_.write("^CF0,22", function(err) {
 		});
-		printer_.write("^FO50,130^FDTaluka: Kalol, Dist.: Gandhinagar, Gujarat-382721.^FS", function(err) {
+		printer_.write("^FO50,130^FDKathua, (J&K)^FS", function(err) {
 		});
 		printer_.write("^FO50,170^GB750,1,3^FS", function(err) {
 		});
