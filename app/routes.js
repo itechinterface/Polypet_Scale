@@ -26,7 +26,7 @@ module.exports = function(app,io) {
 		host: "68.178.172.105",
 		user: "admin",
 		password: "Ashwin!@#2023",
-		database: "virtueplast",
+		database: "polypet",
 		acquireTimeout: 1000000
 	});
 
